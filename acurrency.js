@@ -23,10 +23,7 @@ class Currency extends HTMLElement {
                 },
                 credentials: "include",
             }).then(res => {
-            console.log("res", res);
                 if (!res.ok) throw res;
-                return res.json();
-            }).then(res => {
                 location.reload();
             }).catch(err => {
                 console.error(err);
